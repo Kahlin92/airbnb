@@ -12,4 +12,5 @@
 -- | Belmont Cragin         |
 -- | Beverly                |
 
-
+SELECT neighborhood FROM listings
+WHERE neighborhood LIKE "A%" OR neighborhood LIKE "B%";
