@@ -15,4 +15,7 @@
 -- | Brighton Park          | 678      |
 -- | Burnside               | 10       |
 
+SELECT neighborhood FROM listings INNER JOIN reviews ON listings.id=reviews.listing_id
+WHERE neighborhood LIKE "A%" OR neighborhood LIKE "B%"
+GROUP BY(neighborhood);
 
