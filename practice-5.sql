@@ -12,4 +12,6 @@
 -- | Private room in townhouse           | 3        |
 -- +-------------------------------------+----------+
 
-
+SELECT COUNT(property_type), property_type FROM listings
+WHERE neighborhood LIKE "Hyde Park"
+GROUP BY(property_type);
